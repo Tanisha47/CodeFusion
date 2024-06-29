@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left-part">
+        <div class="content">
+            <div class="header">
+                <label>HTML</label>
+                <button onclick="copyCode('htmlCode')">Copy HTML</button>
+            </div>
+            <textarea id="htmlCode"></textarea>
+        </div>
+        <div class="content">
+            <div class="header">
+                <label>CSS</label>
+                <button onclick="copyCode('cssCode')">Copy CSS</button>
+            </div>
+            <textarea id="cssCode"></textarea>
+        </div>
+        <div class="content">
+            <div class="header">
+                <label>JavaScript</label>
+                <button onclick="copyCode('jsCode')">Copy JS</button>
+            </div>
+            <textarea id="jsCode"></textarea>
+        </div>
+    </div>
+    <div class="right-part">
+        <label id="outputLabel">Output</label>
+        <iframe width="100%" height="90%"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
